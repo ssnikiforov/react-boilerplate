@@ -12,11 +12,14 @@ module.exports = {
         filename: './public/bundle.js'
     },
     resolve: {
-        root: __dirname,
+        modules: [
+            __dirname,
+            "node_modules"
+        ],
         alias: {
 
         },
-        extensions: ['', '.js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     module: {
         loaders: [
